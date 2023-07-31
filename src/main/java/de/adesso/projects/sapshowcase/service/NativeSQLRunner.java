@@ -3,7 +3,6 @@ package de.adesso.projects.sapshowcase.service;
 import de.adesso.projects.sapshowcase.dao.NativeSQL;
 import de.adesso.projects.sapshowcase.model.JobExecutionStatus;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 

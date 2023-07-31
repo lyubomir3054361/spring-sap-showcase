@@ -11,7 +11,6 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @Table(name = "\"ECM_JOB_EXECUTION_STATUS\"")
 @RequiredArgsConstructor
-@NoArgsConstructor
 @Data
 public class JobExecutionStatus {
 
