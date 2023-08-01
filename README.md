@@ -32,6 +32,10 @@ Configure the application.properties:
     spring.datasource.username=<username>
     spring.datasource.password=<password>
 
+    spring.autoconfigure.exclude[0]=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    spring.autoconfigure.exclude[1]=org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+
+
 
 
 Create Manifest file manifest.yml-file inside root directory:
