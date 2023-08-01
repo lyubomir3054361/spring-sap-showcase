@@ -2,7 +2,6 @@
 Showcase for Integration of Spring Boot Application into an SAP-environment, using
 SAP-HANA-Cloud.
 
-
 # Database setup inside SAP HANA Database Explorer
 
     CREATE TABLE ECM_JOB_EXECUTION_STATUS(
@@ -12,9 +11,7 @@ SAP-HANA-Cloud.
     STATUS VARCHAR(500),
     RESULT VARCHAR(500));
 
-
 # Deployment to the HANA-cloud
-
 Create Manifest file manifest.yml-file inside root directory
 
         ---
@@ -40,8 +37,7 @@ Set api-endpoint
   cf login <api-endpoint-url> <username> <password>
 ```
 
-Deploy the application to the cloud. Note: make sure your
-java-version correct
+Deploy the application to the cloud
 ```bash 
   cf push
 ```

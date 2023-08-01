@@ -1,7 +1,11 @@
 ---
 applications:
   - name: spring-sap-showcase-server
-    host: 50317c57-734b-42bc-bcab-cdec41a42705.hana.trial-us10.hanacloud.ondemand.com
+    host: spring-sap-showcase-server
     path: target/spring-sap-showcase-server-1.0.0.jar
     domain: 2b92309ctrial
-    memory: 1G
+    memory: 2G
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ }}'
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+#      SPRING_PROFILES_ACTIVE: cloud

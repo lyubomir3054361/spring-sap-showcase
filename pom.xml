@@ -39,7 +39,27 @@
             <artifactId>ngdbc</artifactId>
             <version>2.9.16</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.sap.cds</groupId>-->
+<!--            <artifactId>cds-feature-hana</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.sap.cds</groupId>-->
+<!--            <artifactId>cds-starter-cloudfoundry</artifactId>-->
+<!--            <version>1.4.0</version>-->
+<!--        </dependency>-->
 
+        <dependency>
+            <groupId>com.sap.cds</groupId>
+            <artifactId>cds-starter-cloudfoundry</artifactId>
+            <version>1.5.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sap.cds</groupId>
+                    <artifactId>cds-feature-mt</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
