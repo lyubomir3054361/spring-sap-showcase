@@ -61,7 +61,7 @@ Make sure cf is installed
   brew install cloudfoundry/tap/cf-cli@8
 ```
 
-Set api-endpoint
+Set API-endpoint (can be retrieved from the trial subaccount overview)
 ```bash 
   cf login <api-endpoint-url> <username> <password>
 ```
