@@ -39,7 +39,7 @@ Create Manifest file manifest.yml-file inside root directory:
         ---
         applications:
           name: spring-sap-showcase-server
-          host: <hana-database-instance>
+          host: spring-sap-showcase-server
           path: target/spring-sap-showcase-server-1.0.0.jar
           memory: 1G
           env:
