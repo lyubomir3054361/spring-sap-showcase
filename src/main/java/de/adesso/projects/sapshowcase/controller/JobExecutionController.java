@@ -1,7 +1,7 @@
 package de.adesso.projects.sapshowcase.controller;
 
 
-import de.adesso.projects.sapshowcase.service.NativeSQLRunner;
+import de.adesso.projects.sapshowcase.service.NativeSQLService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class JobExecutionController {
 
-   private final NativeSQLRunner nativeSQLRunner;
+   private final NativeSQLService nativeSQLService;
 
     @RequestMapping("/")
     public String hello() {
@@ -21,7 +21,7 @@ public class JobExecutionController {
     @RequestMapping("/test_native_sql")
     public String test_native_sql() {
 
-        nativeSQLRunner.runJobs();
+        nativeSQLService.runJobs();
 
         return "Test Native SQL Started!";
     }
