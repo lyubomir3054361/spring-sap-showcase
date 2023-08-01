@@ -33,7 +33,6 @@ public class NativeSQL {
             connection = DriverManager.getConnection(db.getUrl(), db.getUsername(), db.getPassword());
 
             if (connection != null) {
-
                 LOGGER.info("Connection to HANA successful!");
             }
 

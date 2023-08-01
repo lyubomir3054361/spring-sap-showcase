@@ -11,11 +11,11 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class NativeSQLRunner {
-    private static final int MAX_RUM = 100;
+    private static final int MAX_RUM = 10;
     private final NativeSQL nativeSQL;
 
     @Async
-    public void startTest() {
+    public void runJobs() {
         nativeSQL.createConnection();
         for (int i = 0; i < MAX_RUM; i++) {
             JobExecutionStatus job = new JobExecutionStatus();

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class TestController {
+public class JobExecutionController {
 
    private final NativeSQLRunner nativeSQLRunner;
 
@@ -21,7 +21,7 @@ public class TestController {
     @RequestMapping("/test_native_sql")
     public String test_native_sql() {
 
-        nativeSQLRunner.startTest();
+        nativeSQLRunner.runJobs();
 
         return "Test Native SQL Started!";
     }
