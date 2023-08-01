@@ -16,7 +16,7 @@ in order to perform CRUD-operations on a SAP-HANA-database
     STATUS VARCHAR(500),
     RESULT VARCHAR(500));
 
-# Deployment a new server-instance
+# Deployment of a new server-instance
 
 Configure the application.properties:
 
