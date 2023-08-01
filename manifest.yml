@@ -1,6 +1,7 @@
 ---
 applications:
-  - name: spring-sap-showcase-app
+  - name: spring-sap-showcase-server
     host: 50317c57-734b-42bc-bcab-cdec41a42705.hana.trial-us10.hanacloud.ondemand.com
-    path: target/spring-sap-showcase-app-1.0.0.jar
+    path: target/spring-sap-showcase-server-1.0.0.jar
+    domain: 2b92309ctrial
     memory: 1G

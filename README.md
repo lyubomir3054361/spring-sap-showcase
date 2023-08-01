@@ -12,16 +12,18 @@ SAP-HANA-Cloud.
     STATUS VARCHAR(500),
     RESULT VARCHAR(500));
 
+
 # Deployment to the HANA-cloud
 
 Create Manifest file manifest.yml-file inside root directory
 
         ---
         applications:
-          name: spring-sap-showcase-app
+          name: spring-sap-showcase-server
           host: <hana-database-instance>
-          path: target/spring-sap-showcase-app-1.0.0.jar
+          path: target/spring-sap-showcase-server-1.0.0.jar
           memory: 1G
+
 
 Build the application locally
 ```bash 
@@ -29,17 +31,17 @@ Build the application locally
 ```
 
 Make sure cf is installed
-
 ```bash 
   brew install cloudfoundry/tap/cf-cli@8
 ```
 
 Set api-endpoint
- 
 ```bash 
   cf login <api-endpoint-url> <username> <password>
 ```
-Deployment of the application to the cloud
+
+Deploy the application to the cloud. Note: make sure your
+java-version correct
 ```bash 
   cf push
 ```
