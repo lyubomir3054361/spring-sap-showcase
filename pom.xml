@@ -9,10 +9,9 @@
         <relativePath/>
     </parent>
     <groupId>de.adesso.projects</groupId>
-    <artifactId>sapshowcase</artifactId>
+    <artifactId>spring-sap-showcase-app</artifactId>
     <version>1.0.0</version>
-    <name>spring-sap-showcase</name>
-    <description>spring-sap-showcase</description>
+    <name>spring-sap-showcase-app</name>
     <properties>
         <java.version>17</java.version>
     </properties>
