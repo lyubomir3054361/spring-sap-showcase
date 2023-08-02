@@ -72,3 +72,8 @@ Deploy the application to the cloud
   cf push
 ```
 ## Job execution
+
+1. Open dev-space of the trial sub-account overview
+2. Select the deployed instance
+3. Open the link of the application route
+4. add **/test_native_sql** to the url and press **ENTER**
