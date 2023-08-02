@@ -1,4 +1,4 @@
-# Spring-Sap-Showcase
+# Spring-SAP-Showcase
 Showcase for demonstration of Integration of a Spring Boot Application-instance into an SAP-environment,
 in order to perform CRUD-operations on a SAP-HANA-database
 
@@ -45,6 +45,7 @@ Create Manifest file manifest.yml-file inside root directory:
           name: spring-sap-showcase-server
           host: spring-sap-showcase-server
           path: target/spring-sap-showcase-server-1.0.0.jar
+          domain: <custom-domain>
           memory: 1G
           env:
             JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ }}'
@@ -70,3 +71,4 @@ Deploy the application to the cloud
 ```bash 
   cf push
 ```
+## Job execution

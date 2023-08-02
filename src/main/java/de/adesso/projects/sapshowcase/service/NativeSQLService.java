@@ -11,7 +11,7 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class NativeSQLService {
-    private static final int MAX_RUM = 10;
+    public static final int MAX_RUM = 10;
     private final NativeSQL nativeSQL;
 
     @Async

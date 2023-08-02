@@ -1,6 +1,7 @@
 package de.adesso.projects.sapshowcase.dao;
 
 import de.adesso.projects.sapshowcase.model.JobExecutionStatus;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import java.sql.SQLException;
 
 @Component
 @RequiredArgsConstructor
+@Data
 public class NativeSQL {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(NativeSQL.class);
