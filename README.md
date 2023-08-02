@@ -38,7 +38,8 @@ Configure the application.properties:
 
 
 
-Create Manifest file manifest.yml-file inside root directory:
+Create a manifest.yml-file inside root directory:
+
 
         ---
         applications:
