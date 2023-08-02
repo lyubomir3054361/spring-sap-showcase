@@ -14,15 +14,12 @@ public class JobExecutionController {
 
     @RequestMapping("/")
     public String hello() {
-
         return "Hello!";
     }
 
     @RequestMapping("/test_native_sql")
     public String test_native_sql() {
-
         nativeSQLService.runJobs();
-
         return "Test Native SQL Started!";
     }
 

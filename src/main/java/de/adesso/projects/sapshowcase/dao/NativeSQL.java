@@ -48,7 +48,6 @@ public class NativeSQL {
         }
     }
 
-
     public void insertJob(JobExecutionStatus job) {
         if (connection != null) {
             try {
@@ -76,7 +75,6 @@ public class NativeSQL {
         }
     }
 
-
     public void updateJob(JobExecutionStatus job) {
         if (connection != null) {
             try {
@@ -100,7 +98,6 @@ public class NativeSQL {
             }
         }
     }
-
 
     public void getJob(String jobId) {
         if (connection != null) {
@@ -144,6 +141,5 @@ public class NativeSQL {
             }
         }
     }
-
 
 }

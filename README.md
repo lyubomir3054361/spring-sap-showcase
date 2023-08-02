@@ -2,7 +2,7 @@
 Showcase for demonstration of Integration of a Spring Boot Application-instance into an SAP-environment,
 in order to perform CRUD-operations on a SAP-HANA-database
 
-# Database setup
+## Database setup
 
 1. [Register for an SAP-Trial-account](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
 2. [Deploy an SAP-HANA-instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html)
@@ -16,7 +16,7 @@ in order to perform CRUD-operations on a SAP-HANA-database
     STATUS VARCHAR(500),
     RESULT VARCHAR(500));
 
-# Deployment of a new server-instance
+## Deployment of a new server-instance
 
 Configure the application.properties:
 
